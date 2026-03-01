@@ -1,36 +1,63 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# PathWise AI
+
+> Adaptive AI-powered learning platform that teaches you 
+> how to build a PC from scratch — personalized to how 
+> your brain works, built with AMD hardware as the core 
+> teaching example.
+
+## What is PathWise?
+
+PathWise is an AI tutor that learns how YOU learn. 
+Instead of generic video courses, PathWise has a 
+3-question onboarding that builds your learning profile, 
+then adapts every lesson — analogies, depth, pacing — 
+to match your style.
+
+Built for the AMD Slingshot Hackathon 2026.
+
+## Features
+
+- Adaptive AI Teaching — personalized to your learning style
+- AMD-First Curriculum — Ryzen, Radeon, and AMD ecosystem throughout
+- 5 Progressive Milestones — Understanding → Choosing → Assembly → Software → Troubleshooting
+- Voice Mode — full speech-to-speech interface
+- AI-Evaluated Assessments — after every milestone
+- Gamified Completion — XP, accuracy, time tracking
+
+## Tech Stack
+
+- Frontend: Next.js 14, TypeScript, Tailwind CSS
+- AI: Groq API (llama-3.3-70b-versatile)
+- Voice: Web Speech API
+- Storage: localStorage
 
 ## Getting Started
 
-First, run the development server:
+1. Clone the repo
+   git clone https://github.com/thrishavc/PathWise.git
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+2. Install dependencies
+   npm install
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+3. Add your Groq API key
+   Create a .env.local file:
+   GROQ_API_KEY=your_groq_api_key_here
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+4. Run the app
+   npm run dev
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+5. Open http://localhost:3000
 
-## Learn More
+## Project Structure
 
-To learn more about Next.js, take a look at the following resources:
+src/app/
+├── page.tsx          # Welcome screen
+├── onboarding/       # Learning profile setup
+├── learn/            # AI teaching interface
+├── assessment/       # Milestone quizzes
+├── complete/         # Milestone completion
+└── api/chat/         # Groq AI backend
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Team
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Built by Thrisha V C and Radhe for AMD Slingshot 2026.
