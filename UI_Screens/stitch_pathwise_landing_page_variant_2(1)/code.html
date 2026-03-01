@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#f4af25",
+                        "background-light": "#f8f7f5",
+                        "background-dark": "#0d1117",
+                        "card-dark": "#161b22",
+                    },
+                    fontFamily: {
+                        "display": ["Lexend", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "1rem",
+                        "lg": "2rem",
+                        "xl": "3rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        body {
+            font-family: 'Lexend', sans-serif;
+        }
+        .glow-bg {
+            background: radial-gradient(circle at center, rgba(244, 175, 37, 0.15) 0%, rgba(13, 17, 23, 0) 70%);
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 min-h-screen flex flex-col items-center">
+<div class="relative w-full max-w-[1200px] min-h-screen flex flex-col items-center px-6 py-12 glow-bg">
+<header class="w-full flex items-center justify-between mb-16 px-4">
+<div class="flex items-center gap-2">
+<div class="text-primary">
+<span class="material-symbols-outlined text-4xl">route</span>
+</div>
+<h1 class="text-2xl font-bold tracking-tight">PathWise</h1>
+</div>
+<nav class="hidden md:flex items-center gap-8">
+<a class="text-sm font-medium hover:text-primary transition-colors" href="#">Courses</a>
+<a class="text-sm font-medium hover:text-primary transition-colors" href="#">Learning Path</a>
+<a class="text-sm font-medium hover:text-primary transition-colors" href="#">Resources</a>
+<a class="text-sm font-medium hover:text-primary transition-colors" href="#">Community</a>
+</nav>
+<div class="flex items-center gap-4">
+<button class="bg-primary/10 text-primary border border-primary/20 px-6 py-2 rounded-full font-bold text-sm hover:bg-primary/20 transition-all">
+                    Profile
+                </button>
+<div class="w-10 h-10 rounded-full bg-slate-800 border border-slate-700 overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="User profile avatar portrait" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAY2RtIfIiPSDXrilMsTGUBwvVQaMpNfasbSDYAhHCrmxKOymxz8r-LW0FyYRjtmTom8iaqJNpEmAFwGJxpnxNNHwUESn6emNW_6D5ifEJB6CtBNM-y58A89US-Qw6wx843pTpGtFhLJlerNFGHSU5PqVVmz2TiqovuOCRoaIR8SuHT2BY4r7acWEehdl1vBvaA8rDlEewzOogB3tYosrS-6XIR7VQPH8dyx4o8gei-PseG1FWTDjZmQgta9VZp9mvItT1sXNn_VXE"/>
+</div>
+</div>
+</header>
+<main class="flex-1 flex flex-col items-center justify-center w-full max-w-4xl">
+<p class="text-xs font-bold tracking-[0.2em] text-slate-400 mb-8 uppercase">Your Learning Path</p>
+<div class="bg-card-dark border border-slate-800 rounded-xl p-1 w-full shadow-2xl overflow-hidden mb-12">
+<div class="bg-gradient-to-b from-slate-800 to-transparent rounded-t-lg h-64 flex items-center justify-center relative overflow-hidden">
+<div class="absolute inset-0 opacity-20 bg-[radial-gradient(#f4af25_1px,transparent_1px)] [background-size:20px_20px]"></div>
+<div class="relative z-10 text-primary scale-[2.5]">
+<span class="material-symbols-outlined text-8xl opacity-80">memory</span>
+</div>
+</div>
+<div class="p-12 text-center">
+<h2 class="text-4xl md:text-5xl font-bold mb-6 text-white tracking-tight">Building a PC from Scratch</h2>
+<p class="text-lg text-slate-400 leading-relaxed max-w-2xl mx-auto">
+                        From choosing the right components to assembling your first build — taught through real industry context, adapted to how you think.
+                    </p>
+</div>
+</div>
+<div class="flex flex-wrap justify-center items-center gap-3 mb-16">
+<div class="flex items-center group">
+<span class="px-5 py-2 rounded-full bg-slate-800 border border-slate-700 text-sm font-medium text-slate-300 group-hover:border-primary/50 transition-colors">Components</span>
+<span class="material-symbols-outlined text-slate-600 mx-1 text-sm">chevron_right</span>
+</div>
+<div class="flex items-center group">
+<span class="px-5 py-2 rounded-full bg-slate-800 border border-slate-700 text-sm font-medium text-slate-300 group-hover:border-primary/50 transition-colors">Parts</span>
+<span class="material-symbols-outlined text-slate-600 mx-1 text-sm">chevron_right</span>
+</div>
+<div class="flex items-center group">
+<span class="px-5 py-2 rounded-full bg-slate-800 border border-slate-700 text-sm font-medium text-slate-300 group-hover:border-primary/50 transition-colors">Assembly</span>
+<span class="material-symbols-outlined text-slate-600 mx-1 text-sm">chevron_right</span>
+</div>
+<div class="flex items-center group">
+<span class="px-5 py-2 rounded-full bg-slate-800 border border-slate-700 text-sm font-medium text-slate-300 group-hover:border-primary/50 transition-colors">Software</span>
+<span class="material-symbols-outlined text-slate-600 mx-1 text-sm">chevron_right</span>
+</div>
+<div class="flex items-center group">
+<span class="px-5 py-2 rounded-full bg-slate-800 border border-slate-700 text-sm font-medium text-slate-300 group-hover:border-primary/50 transition-colors">Troubleshooting</span>
+</div>
+</div>
+<button class="group flex items-center gap-3 bg-primary text-background-dark px-10 py-5 rounded-full text-xl font-bold hover:scale-105 transition-transform shadow-[0_0_30px_rgba(244,175,37,0.3)]">
+                Start My Learning Path
+                <span class="material-symbols-outlined group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</button>
+</main>
+<footer class="mt-24 pb-8 w-full border-t border-slate-800 pt-8 flex flex-col md:flex-row justify-between items-center text-slate-500 text-sm gap-4">
+<p>© 2024 PathWise Learning Systems. All rights reserved.</p>
+<div class="flex gap-6">
+<a class="hover:text-primary" href="#">Privacy Policy</a>
+<a class="hover:text-primary" href="#">Terms of Service</a>
+<a class="hover:text-primary" href="#">Support</a>
+</div>
+</footer>
+</div>
+</body></html>

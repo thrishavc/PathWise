@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>PathWise | Refined Welcome</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,typography,container-queries"></script>
+<script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#FBBF24", // Amber-400
+                        "background-light": "#f8fafc",
+                        "background-dark": "#0d1117",
+                        "accent-dark": "#161b22",
+                    },
+                    fontFamily: {
+                        display: ["Inter", "sans-serif"],
+                    },
+                    borderRadius: {
+                        DEFAULT: "0.75rem",
+                        "xl": "1rem",
+                        "2xl": "1.5rem",
+                    },
+                },
+            },
+        };
+    </script>
+<style type="text/tailwindcss">
+        @layer base {
+            body {
+                font-family: 'Inter', sans-serif;
+            }
+        }
+        .radial-glow {
+            background: radial-gradient(circle at 50% 0%, rgba(251, 191, 36, 0.15) 0%, rgba(13, 17, 23, 0) 60%);
+        }
+        .glass-pill {
+            background: rgba(251, 191, 36, 0.03);
+            border: 1px solid rgba(251, 191, 36, 0.2);
+            backdrop-filter: blur(8px);
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 min-h-screen flex flex-col selection:bg-primary/30">
+<div class="fixed inset-0 pointer-events-none radial-glow opacity-0 dark:opacity-100 transition-opacity duration-1000"></div>
+<nav class="relative z-10 px-8 py-6 flex justify-between items-center max-w-7xl mx-auto w-full">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-3xl font-bold">school</span>
+<span class="text-xl font-bold tracking-tight">PathWise</span>
+</div>
+<div class="hidden md:flex gap-8 text-sm font-medium text-slate-500 dark:text-slate-400">
+<a class="hover:text-primary transition-colors" href="#">Features</a>
+<a class="hover:text-primary transition-colors" href="#">Methodology</a>
+<a class="hover:text-primary transition-colors" href="#">Pricing</a>
+</div>
+<div class="flex items-center gap-4">
+<button class="p-2 rounded-full hover:bg-slate-200 dark:hover:bg-slate-800 transition-colors" onclick="document.documentElement.classList.toggle('dark')">
+<span class="material-symbols-outlined text-sm">dark_mode</span>
+</button>
+</div>
+</nav>
+<main class="relative z-10 flex-grow flex flex-col items-center justify-center px-6 py-8 text-center max-w-4xl mx-auto">
+<div class="mb-8">
+<span class="material-symbols-outlined text-primary text-6xl mb-4 block">school</span>
+<h1 class="text-4xl font-extrabold tracking-tight md:text-5xl">PathWise</h1>
+</div>
+<div class="space-y-6 mb-10">
+<p class="text-lg md:text-xl text-slate-600 dark:text-slate-400 max-w-2xl mx-auto leading-relaxed">
+                Our adaptive AI tutor personalizes your learning journey — teaching you the way your brain actually works.
+            </p>
+</div>
+<div class="flex flex-wrap justify-center gap-3 mb-12">
+<div class="glass-pill px-5 py-2.5 rounded-full flex items-center gap-2 border border-slate-200 dark:border-primary/20">
+<span class="text-primary text-sm">✦</span>
+<span class="text-sm font-semibold tracking-wide">Adapts to You</span>
+</div>
+<div class="glass-pill px-5 py-2.5 rounded-full flex items-center gap-2 border border-slate-200 dark:border-primary/20">
+<span class="text-primary text-sm">✦</span>
+<span class="text-sm font-semibold tracking-wide">Industry Context</span>
+</div>
+<div class="glass-pill px-5 py-2.5 rounded-full flex items-center gap-2 border border-slate-200 dark:border-primary/20">
+<span class="text-primary text-sm">✦</span>
+<span class="text-sm font-semibold tracking-wide">Voice-Enabled</span>
+</div>
+</div>
+<div class="w-full max-w-md bg-white dark:bg-accent-dark/50 p-8 rounded-2xl border border-slate-200 dark:border-slate-800 shadow-xl dark:shadow-2xl backdrop-blur-sm">
+<form class="space-y-6">
+<div class="text-left space-y-2">
+<label class="block text-sm font-semibold text-slate-700 dark:text-slate-300 ml-1" for="name">
+                        What should we call you?
+                    </label>
+<input class="w-full bg-slate-50 dark:bg-background-dark/50 border border-slate-200 dark:border-slate-700 rounded-xl px-4 py-3.5 text-slate-900 dark:text-white placeholder:text-slate-400 focus:ring-2 focus:ring-primary focus:border-transparent transition-all outline-none" id="name" placeholder="Enter your name..." type="text"/>
+</div>
+<button class="w-full bg-primary hover:bg-amber-500 text-slate-900 font-bold py-4 rounded-xl flex items-center justify-center gap-2 transition-all transform hover:scale-[1.02] active:scale-[0.98] shadow-lg shadow-primary/20" type="submit">
+                    Continue
+                    <span class="material-symbols-outlined font-bold">arrow_forward</span>
+</button>
+</form>
+<p class="mt-6 text-xs text-slate-500 dark:text-slate-500 leading-relaxed">
+                By continuing, you agree to our <a class="underline hover:text-primary" href="#">Terms of Service</a> and <a class="underline hover:text-primary" href="#">Privacy Policy</a>.
+            </p>
+</div>
+</main>
+<footer class="relative z-10 py-10 px-8 text-center">
+<div class="flex justify-center gap-2 mb-4">
+<div class="h-1.5 w-1.5 rounded-full bg-slate-300 dark:bg-slate-700"></div>
+<div class="h-1.5 w-1.5 rounded-full bg-slate-300 dark:bg-slate-700"></div>
+<div class="h-1.5 w-1.5 rounded-full bg-primary"></div>
+</div>
+<p class="text-xs text-slate-400 dark:text-slate-600 font-medium tracking-widest uppercase">
+            © 2024 PathWise AI. All rights reserved.
+        </p>
+</footer>
+
+</body></html>

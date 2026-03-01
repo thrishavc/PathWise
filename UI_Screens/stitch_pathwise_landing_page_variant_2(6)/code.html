@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>PathWise Assessment Question Screen</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#f2b90d",
+                        "background-light": "#f8f8f5",
+                        "background-dark": "#0f0f0f",
+                        "neutral-dark": "#1a1a16",
+                        "border-dark": "#2d2d26"
+                    },
+                    fontFamily: {
+                        "display": ["Inter", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .custom-scrollbar::-webkit-scrollbar {
+            width: 6px;
+        }
+        .custom-scrollbar::-webkit-scrollbar-track {
+            background: transparent;
+        }
+        .custom-scrollbar::-webkit-scrollbar-thumb {
+            background: #2d2d26;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 min-h-screen font-display">
+<div class="relative flex min-h-screen w-full flex-col overflow-x-hidden">
+<header class="flex items-center justify-between border-b border-border-dark px-6 py-4 lg:px-20 bg-background-dark/80 backdrop-blur-md sticky top-0 z-50">
+<div class="flex items-center gap-4">
+<div class="text-primary">
+<span class="material-symbols-outlined text-3xl">route</span>
+</div>
+<h2 class="text-slate-100 text-lg font-bold leading-tight tracking-tight">PathWise</h2>
+</div>
+<nav class="hidden md:flex items-center gap-8">
+<a class="text-slate-300 hover:text-primary text-sm font-medium transition-colors" href="#">Dashboard</a>
+<a class="text-slate-300 hover:text-primary text-sm font-medium transition-colors" href="#">My Courses</a>
+<a class="text-slate-300 hover:text-primary text-sm font-medium transition-colors" href="#">Learning Path</a>
+<a class="text-slate-300 hover:text-primary text-sm font-medium transition-colors" href="#">Profile</a>
+</nav>
+<div class="flex items-center gap-3">
+<button class="flex items-center justify-center rounded-lg h-10 w-10 bg-neutral-dark border border-border-dark text-slate-100 hover:bg-border-dark transition-all">
+<span class="material-symbols-outlined text-[20px]">notifications</span>
+</button>
+<button class="flex items-center justify-center rounded-lg h-10 w-10 bg-neutral-dark border border-border-dark text-slate-100 hover:bg-border-dark transition-all">
+<span class="material-symbols-outlined text-[20px]">settings</span>
+</button>
+<div class="h-10 w-10 rounded-full bg-primary/20 border border-primary/40 flex items-center justify-center overflow-hidden">
+<img alt="User Profile" class="h-full w-full object-cover" data-alt="Close up portrait of a young professional man" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA2hWcKBCsk-JDOeLVMlRH9OExagA4SdNl_KPMzxlW7twHSjeRgRiAtB2Bu4d8LS9tqoFCEY08LHUjJx61CPVUzco5_aCV_CrgD1put4bQClU_ozMiVVkTGc9VzXYxfeJCYloiSZK2SCpG9sg_2te2s6SfeI6xld2fSI6IqupalUg9jXKYkVlwgzW2WmcXDApeUmHuf0CrvTcSV1ns2Rdo98IZMmR2Or_Uotk5zQWa5uT5tMWpkETb4hYs_uUAoApqsj8dt3MDyaIc"/>
+</div>
+</div>
+</header>
+<main class="flex-1 flex flex-col items-center py-8 px-4 lg:px-20 max-w-5xl mx-auto w-full">
+<div class="w-full mb-8">
+<nav class="flex items-center gap-2 mb-4 text-sm font-medium text-slate-400">
+<a class="hover:text-primary transition-colors" href="#">Milestone 1</a>
+<span class="material-symbols-outlined text-xs">chevron_right</span>
+<span class="text-slate-100">Quick Check</span>
+</nav>
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-6">
+<div>
+<h1 class="text-slate-100 text-3xl md:text-4xl font-bold tracking-tight">Quick Check — Milestone 1</h1>
+<p class="text-slate-400 mt-2">Let's see what you've learned so far!</p>
+</div>
+<div class="flex flex-col gap-2 min-w-[200px]">
+<div class="flex justify-between items-center text-sm font-medium">
+<span class="text-slate-300">Question 1 of 3</span>
+<span class="text-primary">33% Complete</span>
+</div>
+<div class="h-2 w-full bg-neutral-dark rounded-full overflow-hidden border border-border-dark">
+<div class="h-full bg-primary" style="width: 33.33%;"></div>
+</div>
+</div>
+</div>
+</div>
+<div class="w-full grid grid-cols-1 gap-8">
+<div class="flex flex-col gap-6">
+<div class="flex items-start gap-4">
+<div class="flex-shrink-0 mt-1">
+<div class="h-12 w-12 rounded-xl bg-primary flex items-center justify-center text-background-dark shadow-[0_0_20px_rgba(242,185,13,0.3)]">
+<span class="material-symbols-outlined text-3xl">smart_toy</span>
+</div>
+</div>
+<div class="relative group max-w-2xl">
+<div class="bg-neutral-dark border border-border-dark p-6 rounded-2xl rounded-tl-none shadow-xl">
+<div class="flex items-center gap-2 mb-2">
+<span class="text-primary text-xs font-bold uppercase tracking-wider">AI Tutor</span>
+<span class="w-1 h-1 rounded-full bg-slate-600"></span>
+<span class="text-slate-500 text-xs font-medium">Warm &amp; Encouraging</span>
+</div>
+<p class="text-slate-100 text-xl md:text-2xl font-medium leading-relaxed">
+                                    "In your own words, what does a CPU do?"
+                                </p>
+</div>
+<div class="mt-3 flex items-center gap-2 text-slate-500">
+<span class="material-symbols-outlined text-sm">info</span>
+<span class="text-xs">Take your time. There's no wrong way to explain it!</span>
+</div>
+</div>
+</div>
+<div class="flex flex-col items-end gap-4 ml-16">
+<div class="w-full relative">
+<textarea class="w-full min-h-[180px] bg-neutral-dark border border-border-dark rounded-2xl p-6 text-slate-100 focus:ring-2 focus:ring-primary focus:border-transparent transition-all resize-none font-display placeholder-slate-600" placeholder="Type your response here..."></textarea>
+<div class="absolute bottom-4 right-4 flex items-center gap-4">
+<span class="text-slate-500 text-xs hidden sm:block">Press Cmd + Enter to submit</span>
+<button class="bg-primary hover:bg-primary/90 text-background-dark font-bold px-6 py-2.5 rounded-lg flex items-center gap-2 transition-all shadow-lg hover:shadow-primary/20">
+<span>Submit Answer</span>
+<span class="material-symbols-outlined text-[20px]">send</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<div class="border-t border-border-dark pt-8 mt-4">
+<h3 class="text-slate-400 text-sm font-bold uppercase tracking-widest mb-4">Related Concepts</h3>
+<div class="flex flex-wrap gap-3">
+<div class="px-4 py-2 rounded-full bg-neutral-dark border border-border-dark text-slate-300 text-sm flex items-center gap-2 hover:border-primary/50 cursor-help transition-all">
+<span class="material-symbols-outlined text-primary text-lg">memory</span>
+                            Von Neumann Architecture
+                        </div>
+<div class="px-4 py-2 rounded-full bg-neutral-dark border border-border-dark text-slate-300 text-sm flex items-center gap-2 hover:border-primary/50 cursor-help transition-all">
+<span class="material-symbols-outlined text-primary text-lg">speed</span>
+                            Clock Speed
+                        </div>
+<div class="px-4 py-2 rounded-full bg-neutral-dark border border-border-dark text-slate-300 text-sm flex items-center gap-2 hover:border-primary/50 cursor-help transition-all">
+<span class="material-symbols-outlined text-primary text-lg">layers</span>
+                            ALU &amp; Control Unit
+                        </div>
+</div>
+</div>
+</div>
+</main>
+<footer class="mt-auto py-8 border-t border-border-dark bg-background-dark/50">
+<div class="max-w-5xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-4">
+<div class="flex items-center gap-2 text-slate-500 text-sm">
+<span class="material-symbols-outlined text-lg">shield</span>
+<span>Your learning progress is saved automatically.</span>
+</div>
+<div class="flex items-center gap-6">
+<a class="text-slate-400 hover:text-slate-200 text-sm transition-colors" href="#">Help Center</a>
+<a class="text-slate-400 hover:text-slate-200 text-sm transition-colors" href="#">Accessibility</a>
+<a class="text-slate-400 hover:text-slate-200 text-sm transition-colors" href="#">Privacy Policy</a>
+</div>
+</div>
+</footer>
+</div>
+</body></html>
